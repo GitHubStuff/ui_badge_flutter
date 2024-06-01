@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.icodeforyou.bundleSuffix">
+    package="com.icodeforyou.badge_demo_app">
    <application
-        android:label="MyAppName"
+        android:label="Badge Demo"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
