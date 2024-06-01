@@ -32,16 +32,16 @@ class InitialScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Wrap(
+          const Wrap(
             children: [
-              UIBadge(value: 9, widthCallback: (double width) {}),
-              UIBadge(value: 99, widthCallback: (double width) {}),
-              UIBadge(value: 999, widthCallback: (double width) {}),
-              UIBadge(value: 9999, widthCallback: (double width) {}),
-              UIBadge(value: 99999, widthCallback: (double width) {}),
-              UIBadge(value: 999999, widthCallback: (double width) {}),
-              UIBadge(value: 9999999, widthCallback: (double width) {}),
-              UIBadge(value: 9999999, widthCallback: (double width) {}),
+              UIBadge(value: 9),
+              UIBadge(value: 99),
+              UIBadge(value: 123),
+              UIBadge(value: 1234),
+              UIBadge(value: 12345),
+              UIBadge(value: 1234567),
+              UIBadge(value: 12345678),
+              UIBadge(value: 123456789),
             ],
           ),
           GestureDetector(

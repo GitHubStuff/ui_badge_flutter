@@ -18,26 +18,22 @@ import 'import package:ui_badge/ui_badge.dart';
   :
   :
 UIBadge(
-                  value: 9,
-                  color: Colors.purple,
-                  border: Colors.green,
-                  textColor: Colors.white,
-                  widthCallback: (double width) {
-                    debugPrint('Width: $width');
-                  });
+  value: 9,
+  color: Colors.purple,
+  border: Colors.green,
+  textColor: Colors.white,
+);
 ```
 
 ## Example
 
 ```dart
 UIBadge(
-        value: 9,                         // Value to display
+        value: 9,        // Value to display
         color: Colors.purple,             // Circle Color
         border: Colors.green,             // Border Color
         textColor: Colors.white,          // Text Color
-        widthCallback: (double width) {   // Callback with widget size
-          debugPrint('Width: $width');
-        }),
+        ),
 ```
 
 **NOTE** the ```/example``` app has usage/example
@@ -52,13 +48,11 @@ Features a callback that reports the width of the resulting widget.
 
 ```dart
 UIBadge(
-        value: 9,                         // Value to display
+        value: 9,        // Value to display
         color: Colors.purple,             // Circle Color
         border: Colors.green,             // Border Color
         textColor: Colors.white,          // Text Color
-        widthCallback: (double width) {   // Callback with widget size
-          debugPrint('Width: $width');
-        }),
+        ),
 ```
 
 ## Example App
@@ -78,7 +72,6 @@ class UIBadge extends StatelessWidget {
   final Color borderColor;
   final Color textColor;
   final double borderWidth;
-  final Function(double)? widthCallback;
 
   // ignore: prefer_const_constructors_in_immutables
   UIBadge({
@@ -88,7 +81,6 @@ class UIBadge extends StatelessWidget {
     this.borderColor = Colors.transparent,
     this.textColor = Colors.white,
     this.borderWidth = 2.0,
-    this.widthCallback,
   });
 ```
 
