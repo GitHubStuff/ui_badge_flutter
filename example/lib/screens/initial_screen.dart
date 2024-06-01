@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:ui_badge/ui_badge.dart';
 
 import '../gen/assets.gen.dart';
-
-//TODO: Replace with your samples that feature your package
-import 'package:ui_badge/ui_badge.dart';
 
 class InitialScreen extends StatelessWidget {
   final String title;
@@ -34,6 +32,18 @@ class InitialScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Wrap(
+            children: [
+              UIBadge(value: 9, widthCallback: (double width) {}),
+              UIBadge(value: 99, widthCallback: (double width) {}),
+              UIBadge(value: 999, widthCallback: (double width) {}),
+              UIBadge(value: 9999, widthCallback: (double width) {}),
+              UIBadge(value: 99999, widthCallback: (double width) {}),
+              UIBadge(value: 999999, widthCallback: (double width) {}),
+              UIBadge(value: 9999999, widthCallback: (double width) {}),
+              UIBadge(value: 9999999, widthCallback: (double width) {}),
+            ],
+          ),
           GestureDetector(
             onTap: () {
               const snackBar = SnackBar(
