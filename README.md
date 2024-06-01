@@ -70,14 +70,25 @@ For examples go to `/example` folder.
 Widget declaration:
 
 ```dart
-  
-  const UIBadge({
+class UIBadge extends StatelessWidget {
+  late final double circleDiameter;
+  final double borderPadding = 14.0;
+  final num value;
+  final Color backgroundColor;
+  final Color borderColor;
+  final Color textColor;
+  final double borderWidth;
+  final Function(double)? widthCallback;
+
+  // ignore: prefer_const_constructors_in_immutables
+  UIBadge({
     super.key,
     required this.value,
-    required this.color,
-    this.border = Colors.transparent,
-    this.textColor = Colors.black,
-    required this.widthCallback,
+    this.backgroundColor = const Color(0xffff0800),
+    this.borderColor = Colors.transparent,
+    this.textColor = Colors.white,
+    this.borderWidth = 2.0,
+    this.widthCallback,
   });
 ```
 

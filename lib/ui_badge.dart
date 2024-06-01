@@ -12,7 +12,7 @@ class UIBadge extends StatelessWidget {
   final Color borderColor;
   final Color textColor;
   final double borderWidth;
-  final Function(double) widthCallback;
+  final Function(double)? widthCallback;
 
   // ignore: prefer_const_constructors_in_immutables
   UIBadge({
@@ -22,7 +22,7 @@ class UIBadge extends StatelessWidget {
     this.borderColor = Colors.transparent,
     this.textColor = Colors.white,
     this.borderWidth = 2.0,
-    required this.widthCallback,
+    this.widthCallback,
   });
 
   @override
@@ -43,7 +43,7 @@ class UIBadge extends StatelessWidget {
 
     // Invoke the callback with the calculated width
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      widthCallback(circleDiameter);
+      if (widthCallback != null) widthCallback!(circleDiameter);
     });
 
     return Container(

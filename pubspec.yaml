@@ -1,6 +1,6 @@
 name: ui_badge
 description: "A Badge widget to show a number in a circle with a background color."
-version: 0.2.0
+version: 0.2.1
 home_page: http://www.icodeforyou.com
 publish_to: none # Remove this line if you wish to publish to pub.dev
 
