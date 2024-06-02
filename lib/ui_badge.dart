@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'dart:ui' as ui;
 
+import 'package:ui_extensions_flutter/ui_extensions_flutter.dart';
+
 class UIBadge extends StatelessWidget {
   final double borderPadding = 14.0;
   final num value;
@@ -49,7 +51,7 @@ class UIBadge extends StatelessWidget {
       child: Text(
         formattedValue,
         style: TextStyle(fontSize: fontSize, color: textColor),
-      ),
+      ).withPadding(bottom: borderWidth / 2.0),
     );
   }
 

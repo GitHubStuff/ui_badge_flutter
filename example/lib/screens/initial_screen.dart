@@ -42,6 +42,20 @@ class InitialScreen extends StatelessWidget {
               UIBadge(value: 1234567),
               UIBadge(value: 12345678),
               UIBadge(value: 123456789),
+              UIBadge(
+                value: 8912,
+                backgroundColor: Colors.purple,
+                textColor: Colors.white,
+                borderWidth: 6.0,
+                borderColor: Colors.red,
+              ),
+              UIBadge(
+                value: 7,
+                backgroundColor: Colors.purple,
+                textColor: Colors.white,
+                borderWidth: 2.0,
+                borderColor: Colors.red,
+              ),
             ],
           ),
           GestureDetector(
